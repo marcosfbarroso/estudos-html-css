@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Elementos</title>
+    <link rel="shortcut icon" href="logo-css.png" type="image/png">
+    
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        a {
+            color: blue;
+            text-decoration: underline;
+        }
+
+        a:visited {
+            color: purple;
+            font-weight: bold;
+
+        }
+
+        a:hover {
+            color:darkblue;
+            font-weight: bold;
+        }
+
+        a:active {
+            color: red;
+        }
+        
+        a::after {
+            content:' [Link]';
+            font-size: 8px;
+        }
+
+        div > p {
+            display: none;
+        }
+
+        div {
+            background-color: red;
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+            text-align: center;
+            box-shadow: 1px 1px 5px black;
+        }
+        
+        div:hover > p{
+            display: block;
+        }
+
+        p {
+            color: white;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li>Repositório <a href="https://gustavoguanabara.github.io" target="_blank">Github</a>.</li>
+        <li>Canal do <a href="https://youtube.com/cursoemvideo/" target="_blank">YouTube</a>.</li>
+        <li>Site do <a href="https://www.cursoemvideo.com" target="_blank">CursoemVideo</a>.</li>
+    </ul>
+    
+    <h1>Conteúdo Especial</h1>
+    <div>
+        Passe o mouse aqui.
+        <p>SURPRESAAAA!</p>
+    </div>
+</body>
+</html>

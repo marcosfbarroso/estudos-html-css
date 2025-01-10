@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@font-face
+{
+    font-family: 'Tolkien.otf';
+    src: url('font/MorrisRomanBlack.otf'), format('opentype');
+}
+
+h1 {
+    font-family: 'Tolkien.otf';
+}
+
+
+p {
+    font: normal 500 1.25em 'Roboto Flex'
+}

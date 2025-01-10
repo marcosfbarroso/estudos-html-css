@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens Dinâmicas</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/ico">
+</head>
+<body>
+    <h1>Imagens Dinâmicas</h1>
+    <picture>
+        <source media="(max-width:960px)" srcset="imagens/pequena.png" type="image/png">
+        <source media="(max-width:1440px)" srcset="imagens/media.png" type="image/png">
+        <img src="imagens/grande.png" alt="imagem grande">
+    </picture>
+    
+    <h1>Trabalhando com Audios</h1>
+    <audio preload="none" controls loop >
+        <source src="midia/happy-mistake.mp3" type="audio/mpeg">
+        <source src="midia/happy-mistake.ogg" type="audio/ogg">
+        <source src="midia/happy-mistake.wav" type="audio/wav">
+    </audio>
+</body>
+</html>

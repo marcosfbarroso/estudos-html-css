@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyperlinks</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Link Externo</h1>
+
+    <h2>Link padrão</h2>
+
+    <p>Neste modo, por padrão, iremos sobrepor a página atual com ao acessar o link.</p>
+    <p>Acesse ao perfil do <a href="https://www.youtube.com/c/CursoemV%C3%ADdeo">curso em video</a> no youtube. </p>
+    <p>Acesse ao perfil do <a href="https://github.com/gustavoguanabara"> curso em video</a> no github.</p>
+
+    <h2>Boas práticas com links</h2>
+
+    <p>Uma boa prática para links externos é utilizar dentro da tag &lt; a &gt; o atributo <mark>target</mark> com o valor <mark>_blank</mark> para criar uma nova aba.</p>
+    <p>Acesso ao perfil do <a href="https://github.com/gustavoguanabara" target="_blank" rel="external"> curso em video</a> no github.</p>
+
+    <h2>Links internos</h2>
+    
+    <p>Para trabalhar com links dentro da própria página utiliza-se a mesma tag, porém para orientar o navegador o mecanismo de busca que vamos definir utilizaremos o atributo <mark>rel</mark> com o valor <mark>"next"</mark>.</p>
+    <p>para acessar a <a href="pag002.html" rel="next">página 2</a>.</p>
+    <p>Para acessar uma página não endossada utiliza-se no atributo <mark>rel</mark> o valor <mark>"nofollow"</mark>. Por exemplo, digamos que o site <a href="http://www.google.com.br" target="_blank" rel="nofollow">www.google.com.br</a> não seja seguro.</p>
+
+    <p>Para ir para página 03, clique <a href="paginas/pagina003.html" target="_self" rel="next">aqui</a>.</p>
+
+    <p>Para baixar arquivos basta ancorarmos com a tag <mark>&lt; a &gt;</mark> e utilizarmos o atributo <mark>href</mark> com o valor <mark>download</mark>.</p>
+
+    <h2>Lista de Downloads</h2>
+    <ol type="1" start="1">
+        <li>Arquivo em <a href="download/capitulo-10.pdf" target="_blank" download="capitulo-10.pdf" type="application/pdf">.pdf</a>.</li>
+        <li>Arquivo em <a href="download/capitulo-10.zip" download="capitulo-10.zip" type="application/zip">.zip</a>.</li>
+    </ol>
+    <h2>Link Externo</h2>
+    <p>Para ter acesso a uma biblioteca com media types basta acessar</p>
+    <ul type="disc">
+        <li><a href="http://www.iana.org/assignments/media-types/" target="_blank" rel="external">www.iana.org/assignments/media-types/</a></li>
+    </ul>
+
+</body>
+</html>
