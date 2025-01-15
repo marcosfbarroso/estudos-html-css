@@ -4,53 +4,101 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas</title>
+    <style>
+
+        html {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        table {
+            width: 400px;
+            border-collapse: collapse;
+            border: 2px solid black;
+
+            position:relative;
+        }
+
+        th, td {
+            padding: 10px;
+            border: 1px solid black;
+        }
+
+        th.num {
+            text-align: right;
+        }
+
+        th, tfoot {
+            background-color: darkgrey;
+        }
+
+        thead > tr > th {
+            position:sticky;
+            background-color: grey;
+            top: -1px;
+        }
+
+        tbody {
+            color: black;
+        }
+
+        td.num {
+            text-align: right;
+        }
+
+        tr:nth-child(2n) {
+            background-color: lightgrey;
+        }
+    </style>
 </head>
 <body>
     <h1>Tabelas Grandes</h1>
 
     <table>
+        <caption>Tabela treino sobre estados brasileiros.</caption>
         <thead>
-            <th>Estado</th>
-            <th>População</th>
-            <th></th>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
+            </tr>
+
         </thead>
         
         <tfoot>
-        
+            <th scope="row">Total</th>
+            <th class="num">123.123.123</th>
         </tfoot>
 
         <tbody>
             <tr>
                 <td>São Paulo</td>
-                <td>44.411.238</td>
+                <td class="num">44.411.238</td>
             </tr>
             <tr>
                 <td>Minas Gerais</td>
-                <td>20.539.989</td>
+                <td class="num">20.539.989</td>
             </tr>
             <tr>
                 <td>Rio de Janeiro</td>
-                <td>16.055.174</td>
+                <td class="num">16.055.174</td>
             </tr>
             <tr>
                 <td>Bahia</td>
-                <td>14.141.626</td>
+                <td class="num">14.141.626</td>
             </tr>
             <tr>
                 <td>Rio Grande do Sul</td>
-                <td>11.882.965</td>
+                <td class="num">11.882.965</td>
             </tr>
             <tr>
                 <td>Paraná</td>
-                <td>11.444.380</td>
+                <td class="num">11.444.380</td>
             </tr>
             <tr>
                 <td>Pernambuco</td>
-                <td>9.058.931</td>
+                <td class="num">9.058.931</td>
             </tr>
             <tr>
                 <td>Ceará</td>
-                <td>8.794.957</td>
+                <td class="num">8.794.957</td>
             </tr>
         </tbody>
 
