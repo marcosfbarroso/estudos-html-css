@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela Resposiva</title>
+
+    <style>
+        h1, p {
+            text-align: justify;
+        }
+
+        table {
+            position:relative;
+
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            
+            border-collapse: collapse;
+            border: 2px solid black;
+
+        }
+
+        caption {
+            font-size: 1em;
+
+            margin-bottom: 1px;
+            
+        }
+
+        thead, tfoot {
+            border: 2px solid black;
+        }
+
+        th {
+            background-color: darkgrey;
+            color:white;
+            
+            font-size: 0.9em;
+            text-transform: uppercase;
+
+            border: 1px solid black;
+            padding: 5px;
+
+            height: 35px
+        }
+
+        td {
+            font-size: 0.8em;
+            text-align: center;
+
+            width: 100px;
+            border: 1px solid black;
+            padding: 5px;
+        }
+
+        tr:nth-of-type(even) {
+            background-color: lightgrey;
+        }
+        
+
+        div#conteiner {
+            width: 300px;
+            height: 500px;
+            overflow:auto;
+        }
+
+        thead > tr > th {
+            position:sticky;
+            color:black;
+            background-color: grey;
+            top:-1px ;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Tabela Responsiva</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident voluptates repellat impedit officia ut eligendi quaerat. Quo, consequatur? Iure eius sequi quis accusamus illo natus earum ex incidunt libero atque. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis commodi optio vero atque minus. Perferendis, rerum quod necessitatibus quos doloremque ullam adipisci unde ab totam eaque, exercitationem praesentium? Consectetur, eveniet?Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum natus eligendi perferendis, quam neque necessitatibus saepe officia repellendus aspernatur nesciunt, mollitia distinctio, similique non atque quis provident! Officiis, provident cupiditate?.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident voluptates repellat impedit officia ut eligendi quaerat. Quo, consequatur? Iure eius sequi quis accusamus illo natus earum ex incidunt libero atque. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis commodi optio vero atque minus. Perferendis, rerum quod necessitatibus quos doloremque ullam adipisci unde ab totam eaque, exercitationem praesentium? Consectetur, eveniet?Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum natus eligendi perferendis, quam neque necessitatibus saepe officia repellendus aspernatur nesciunt, mollitia distinctio, similique non atque quis provident! Officiis, provident cupiditate?.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident voluptates repellat impedit officia ut eligendi quaerat. Quo, consequatur? Iure eius sequi quis accusamus illo natus earum ex incidunt libero atque. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis commodi optio vero atque minus. Perferendis, rerum quod necessitatibus quos doloremque ullam adipisci unde ab totam eaque, exercitationem praesentium? Consectetur, eveniet?Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum natus eligendi perferendis, quam neque necessitatibus saepe officia repellendus aspernatur nesciunt, mollitia distinctio, similique non atque quis provident! Officiis, provident cupiditate?.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident voluptates repellat impedit officia ut eligendi quaerat. Quo, consequatur? Iure eius sequi quis accusamus illo natus earum ex incidunt libero atque. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis commodi optio vero atque minus. Perferendis, rerum quod necessitatibus quos doloremque ullam adipisci unde ab totam eaque, exercitationem praesentium? Consectetur, eveniet?Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum natus eligendi perferendis, quam neque necessitatibus saepe officia repellendus aspernatur nesciunt, mollitia distinctio, similique non atque quis provident! Officiis, provident cupiditate?.</p>
+
+    <div id="conteiner">
+        <table>
+            <caption>Tabelas Responsivas</caption>
+            <thead>
+                <tr>
+                    <th>Jan</th>
+                    <th>Feb</th>
+                    <th>Mar</th>
+                    <th>Apr</th>
+                    <th>May</th>
+                    <th>Jun</th>
+                    <th>Jul</th>
+                    <th>Aug</th>
+                    <th>Sep</th>
+                    <th>Oct</th>
+                    <th>Nov</th>
+                    <th>Dec</th>
+                  </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>100</td>
+                    <td>200</td>
+                    <td>150</td>
+                    <td>300</td>
+                    <td>250</td>
+                    <td>400</td>
+                    <td>350</td>
+                    <td>500</td>
+                    <td>450</td>
+                    <td>600</td>
+                    <td>550</td>
+                    <td>700</td>
+                  </tr>
+                  <tr>
+                    <td>120</td>
+                    <td>180</td>
+                    <td>140</td>
+                    <td>220</td>
+                    <td>200</td>
+                    <td>310</td>
+                    <td>270</td>
+                    <td>330</td>
+                    <td>290</td>
+                    <td>410</td>
+                    <td>390</td>
+                    <td>450</td>
+                  </tr>
+                  <tr>
+                    <td>90</td>
+                    <td>150</td>
+                    <td>130</td>
+                    <td>210</td>
+                    <td>190</td>
+                    <td>300</td>
+                    <td>260</td>
+                    <td>320</td>
+                    <td>280</td>
+                    <td>400</td>
+                    <td>380</td>
+                    <td>440</td>
+                  </tr>
+                  <tr>
+                    <td>200</td>
+                    <td>250</td>
+                    <td>220</td>
+                    <td>310</td>
+                    <td>290</td>
+                    <td>420</td>
+                    <td>380</td>
+                    <td>490</td>
+                    <td>450</td>
+                    <td>560</td>
+                    <td>520</td>
+                    <td>600</td>
+                  </tr>
+                  <tr>
+                    <td>150</td>
+                    <td>230</td>
+                    <td>170</td>
+                    <td>280</td>
+                    <td>240</td>
+                    <td>370</td>
+                    <td>330</td>
+                    <td>430</td>
+                    <td>390</td>
+                    <td>510</td>
+                    <td>470</td>
+                    <td>580</td>
+                  </tr>
+                  <tr>
+                    <td>110</td>
+                    <td>160</td>
+                    <td>140</td>
+                    <td>250</td>
+                    <td>210</td>
+                    <td>350</td>
+                    <td>310</td>
+                    <td>400</td>
+                    <td>360</td>
+                    <td>480</td>
+                    <td>440</td>
+                    <td>530</td>
+                  </tr>
+                  <tr>
+                    <td>190</td>
+                    <td>240</td>
+                    <td>200</td>
+                    <td>290</td>
+                    <td>270</td>
+                    <td>410</td>
+                    <td>370</td>
+                    <td>470</td>
+                    <td>430</td>
+                    <td>550</td>
+                    <td>510</td>
+                    <td>620</td>
+                  </tr>
+                  <tr>
+                    <td>130</td>
+                    <td>200</td>
+                    <td>170</td>
+                    <td>260</td>
+                    <td>230</td>
+                    <td>390</td>
+                    <td>350</td>
+                    <td>440</td>
+                    <td>400</td>
+                    <td>520</td>
+                    <td>480</td>
+                    <td>590</td>
+                  </tr>
+                  <tr>
+                    <td>170</td>
+                    <td>220</td>
+                    <td>190</td>
+                    <td>300</td>
+                    <td>260</td>
+                    <td>430</td>
+                    <td>390</td>
+                    <td>490</td>
+                    <td>450</td>
+                    <td>570</td>
+                    <td>530</td>
+                    <td>650</td>
+                  </tr>
+                  <tr>
+                    <td>140</td>
+                    <td>190</td>
+                    <td>160</td>
+                    <td>240</td>
+                    <td>210</td>
+                    <td>360</td>
+                    <td>320</td>
+                    <td>420</td>
+                    <td>380</td>
+                    <td>500</td>
+                    <td>460</td>
+                    <td>570</td>
+                  </tr>
+                  <tr>
+                    <td>100</td>
+                    <td>200</td>
+                    <td>150</td>
+                    <td>300</td>
+                    <td>250</td>
+                    <td>400</td>
+                    <td>350</td>
+                    <td>500</td>
+                    <td>450</td>
+                    <td>600</td>
+                    <td>550</td>
+                    <td>700</td>
+                  </tr>
+                  <tr>
+                    <td>120</td>
+                    <td>180</td>
+                    <td>140</td>
+                    <td>220</td>
+                    <td>200</td>
+                    <td>310</td>
+                    <td>270</td>
+                    <td>330</td>
+                    <td>290</td>
+                    <td>410</td>
+                    <td>390</td>
+                    <td>450</td>
+                  </tr>
+                  <tr>
+                    <td>90</td>
+                    <td>150</td>
+                    <td>130</td>
+                    <td>210</td>
+                    <td>190</td>
+                    <td>300</td>
+                    <td>260</td>
+                    <td>320</td>
+                    <td>280</td>
+                    <td>400</td>
+                    <td>380</td>
+                    <td>440</td>
+                  </tr>
+                  <tr>
+                    <td>200</td>
+                    <td>250</td>
+                    <td>220</td>
+                    <td>310</td>
+                    <td>290</td>
+                    <td>420</td>
+                    <td>380</td>
+                    <td>490</td>
+                    <td>450</td>
+                    <td>560</td>
+                    <td>520</td>
+                    <td>600</td>
+                  </tr>
+                  <tr>
+                    <td>150</td>
+                    <td>230</td>
+                    <td>170</td>
+                    <td>280</td>
+                    <td>240</td>
+                    <td>370</td>
+                    <td>330</td>
+                    <td>430</td>
+                    <td>390</td>
+                    <td>510</td>
+                    <td>470</td>
+                    <td>580</td>
+                  </tr>
+                  <tr>
+                    <td>110</td>
+                    <td>160</td>
+                    <td>140</td>
+                    <td>250</td>
+                    <td>210</td>
+                    <td>350</td>
+                    <td>310</td>
+                    <td>400</td>
+                    <td>360</td>
+                    <td>480</td>
+                    <td>440</td>
+                    <td>530</td>
+                  </tr>
+                  <tr>
+                    <td>190</td>
+                    <td>240</td>
+                    <td>200</td>
+                    <td>290</td>
+                    <td>270</td>
+                    <td>410</td>
+                    <td>370</td>
+                    <td>470</td>
+                    <td>430</td>
+                    <td>550</td>
+                    <td>510</td>
+                    <td>620</td>
+                  </tr>
+                  <tr>
+                    <td>130</td>
+                    <td>200</td>
+                    <td>170</td>
+                    <td>260</td>
+                    <td>230</td>
+                    <td>390</td>
+                    <td>350</td>
+                    <td>440</td>
+                    <td>400</td>
+                    <td>520</td>
+                    <td>480</td>
+                    <td>590</td>
+                  </tr>
+                  <tr>
+                    <td>170</td>
+                    <td>220</td>
+                    <td>190</td>
+                    <td>300</td>
+                    <td>260</td>
+                    <td>430</td>
+                    <td>390</td>
+                    <td>490</td>
+                    <td>450</td>
+                    <td>570</td>
+                    <td>530</td>
+                    <td>650</td>
+                  </tr>
+                  <tr>
+                    <td>140</td>
+                    <td>190</td>
+                    <td>160</td>
+                    <td>240</td>
+                    <td>210</td>
+                    <td>360</td>
+                    <td>320</td>
+                    <td>420</td>
+                    <td>380</td>
+                    <td>500</td>
+                    <td>460</td>
+                    <td>570</td>
+                  </tr>
+                <tr>
+                  <td>100</td>
+                  <td>200</td>
+                  <td>150</td>
+                  <td>300</td>
+                  <td>250</td>
+                  <td>400</td>
+                  <td>350</td>
+                  <td>500</td>
+                  <td>450</td>
+                  <td>600</td>
+                  <td>550</td>
+                  <td>700</td>
+                </tr>
+                <tr>
+                  <td>120</td>
+                  <td>180</td>
+                  <td>140</td>
+                  <td>220</td>
+                  <td>200</td>
+                  <td>310</td>
+                  <td>270</td>
+                  <td>330</td>
+                  <td>290</td>
+                  <td>410</td>
+                  <td>390</td>
+                  <td>450</td>
+                </tr>
+                <tr>
+                  <td>90</td>
+                  <td>150</td>
+                  <td>130</td>
+                  <td>210</td>
+                  <td>190</td>
+                  <td>300</td>
+                  <td>260</td>
+                  <td>320</td>
+                  <td>280</td>
+                  <td>400</td>
+                  <td>380</td>
+                  <td>440</td>
+                </tr>
+                <tr>
+                  <td>200</td>
+                  <td>250</td>
+                  <td>220</td>
+                  <td>310</td>
+                  <td>290</td>
+                  <td>420</td>
+                  <td>380</td>
+                  <td>490</td>
+                  <td>450</td>
+                  <td>560</td>
+                  <td>520</td>
+                  <td>600</td>
+                </tr>
+                <tr>
+                  <td>150</td>
+                  <td>230</td>
+                  <td>170</td>
+                  <td>280</td>
+                  <td>240</td>
+                  <td>370</td>
+                  <td>330</td>
+                  <td>430</td>
+                  <td>390</td>
+                  <td>510</td>
+                  <td>470</td>
+                  <td>580</td>
+                </tr>
+                <tr>
+                  <td>110</td>
+                  <td>160</td>
+                  <td>140</td>
+                  <td>250</td>
+                  <td>210</td>
+                  <td>350</td>
+                  <td>310</td>
+                  <td>400</td>
+                  <td>360</td>
+                  <td>480</td>
+                  <td>440</td>
+                  <td>530</td>
+                </tr>
+                <tr>
+                  <td>190</td>
+                  <td>240</td>
+                  <td>200</td>
+                  <td>290</td>
+                  <td>270</td>
+                  <td>410</td>
+                  <td>370</td>
+                  <td>470</td>
+                  <td>430</td>
+                  <td>550</td>
+                  <td>510</td>
+                  <td>620</td>
+                </tr>
+                <tr>
+                  <td>130</td>
+                  <td>200</td>
+                  <td>170</td>
+                  <td>260</td>
+                  <td>230</td>
+                  <td>390</td>
+                  <td>350</td>
+                  <td>440</td>
+                  <td>400</td>
+                  <td>520</td>
+                  <td>480</td>
+                  <td>590</td>
+                </tr>
+                <tr>
+                  <td>170</td>
+                  <td>220</td>
+                  <td>190</td>
+                  <td>300</td>
+                  <td>260</td>
+                  <td>430</td>
+                  <td>390</td>
+                  <td>490</td>
+                  <td>450</td>
+                  <td>570</td>
+                  <td>530</td>
+                  <td>650</td>
+                </tr>
+                <tr>
+                  <td>140</td>
+                  <td>190</td>
+                  <td>160</td>
+                  <td>240</td>
+                  <td>210</td>
+                  <td>360</td>
+                  <td>320</td>
+                  <td>420</td>
+                  <td>380</td>
+                  <td>500</td>
+                  <td>460</td>
+                  <td>570</td>
+                </tr>
+                <tr>
+                  <td>100</td>
+                  <td>200</td>
+                  <td>150</td>
+                  <td>300</td>
+                  <td>250</td>
+                  <td>400</td>
+                  <td>350</td>
+                  <td>500</td>
+                  <td>450</td>
+                  <td>600</td>
+                  <td>550</td>
+                  <td>700</td>
+                </tr>
+                <tr>
+                  <td>120</td>
+                  <td>180</td>
+                  <td>140</td>
+                  <td>220</td>
+                  <td>200</td>
+                  <td>310</td>
+                  <td>270</td>
+                  <td>330</td>
+                  <td>290</td>
+                  <td>410</td>
+                  <td>390</td>
+                  <td>450</td>
+                </tr>
+                <tr>
+                  <td>90</td>
+                  <td>150</td>
+                  <td>130</td>
+                  <td>210</td>
+                  <td>190</td>
+                  <td>300</td>
+                  <td>260</td>
+                  <td>320</td>
+                  <td>280</td>
+                  <td>400</td>
+                  <td>380</td>
+                  <td>440</td>
+                </tr>
+                <tr>
+                  <td>200</td>
+                  <td>250</td>
+                  <td>220</td>
+                  <td>310</td>
+                  <td>290</td>
+                  <td>420</td>
+                  <td>380</td>
+                  <td>490</td>
+                  <td>450</td>
+                  <td>560</td>
+                  <td>520</td>
+                  <td>600</td>
+                </tr>
+                <tr>
+                  <td>150</td>
+                  <td>230</td>
+                  <td>170</td>
+                  <td>280</td>
+                  <td>240</td>
+                  <td>370</td>
+                  <td>330</td>
+                  <td>430</td>
+                  <td>390</td>
+                  <td>510</td>
+                  <td>470</td>
+                  <td>580</td>
+                </tr>
+                <tr>
+                  <td>110</td>
+                  <td>160</td>
+                  <td>140</td>
+                  <td>250</td>
+                  <td>210</td>
+                  <td>350</td>
+                  <td>310</td>
+                  <td>400</td>
+                  <td>360</td>
+                  <td>480</td>
+                  <td>440</td>
+                  <td>530</td>
+                </tr>
+                <tr>
+                  <td>190</td>
+                  <td>240</td>
+                  <td>200</td>
+                  <td>290</td>
+                  <td>270</td>
+                  <td>410</td>
+                  <td>370</td>
+                  <td>470</td>
+                  <td>430</td>
+                  <td>550</td>
+                  <td>510</td>
+                  <td>620</td>
+                </tr>
+                <tr>
+                  <td>130</td>
+                  <td>200</td>
+                  <td>170</td>
+                  <td>260</td>
+                  <td>230</td>
+                  <td>390</td>
+                  <td>350</td>
+                  <td>440</td>
+                  <td>400</td>
+                  <td>520</td>
+                  <td>480</td>
+                  <td>590</td>
+                </tr>
+                <tr>
+                  <td>170</td>
+                  <td>220</td>
+                  <td>190</td>
+                  <td>300</td>
+                  <td>260</td>
+                  <td>430</td>
+                  <td>390</td>
+                  <td>490</td>
+                  <td>450</td>
+                  <td>570</td>
+                  <td>530</td>
+                  <td>650</td>
+                </tr>
+                <tr>
+                  <td>140</td>
+                  <td>190</td>
+                  <td>160</td>
+                  <td>240</td>
+                  <td>210</td>
+                  <td>360</td>
+                  <td>320</td>
+                  <td>420</td>
+                  <td>380</td>
+                  <td>500</td>
+                  <td>460</td>
+                  <td>570</td>
+                </tr>
+              </tbody>
+        </table>
+    </div>
+</body>
+</html>
