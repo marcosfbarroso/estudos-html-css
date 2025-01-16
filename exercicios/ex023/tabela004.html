@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicios</title>
+    <style>
+
+        table {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            
+            border-collapse: collapse;
+            border: 2px solid black;
+
+        }
+
+        caption {
+            font-size: 1em;
+
+            margin-bottom: 1px;
+            
+        }
+
+        th {
+            font-size: 0.9em;
+            text-transform: uppercase;
+
+            border: 1px solid black;
+            padding: 5px;
+
+            height: 35px
+        }
+
+        td {
+            font-size: 0.8em;
+            text-align: center;
+
+            width: 100px;
+            border: 1px solid black;
+            padding: 5px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Exercicio de tabela</h1>
+    <table>
+        <caption>Filmes Favoritos</caption>
+        <thead>
+            <tr>
+                <th scope="col">Grupos</td>
+                <th scope="col">Nomes</td>
+                <th scope="colgroup" colspan="3">Filmes</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="rowgroup" rowspan="3">Mulheres</td>
+                <td>Ana Maria</td>
+                <td>Alien</td>
+                <td>Rambo</td>
+                <td>Vingadores</td>
+            </tr>
+            <tr>
+                <td>Beatriz Sousa</td>
+                <td>Hulk</td>
+                <td>Inception</td>
+                <td>Batman</td>
+            </tr>
+            <tr>
+                <td>Claudia Melo</td>
+                <td>Oblivion</td>
+                <td>Matrix</td>
+                <td>Big Hero</td>
+            </tr>
+
+            <tr>
+                <th scope="rowgroup" rowspan="3">Mulheres</td>
+                <td>Bruno Mendonça</td>
+                <td>Intocáveis</td>
+                <td>AMnésia</td>
+                <td>Gladiadores</td>
+            </tr>
+            <tr>
+                <td>Daniel Lourenço</td>
+                <td>Wall-E</td>
+                <td>Oldboy</td>
+                <td>Dangal</td>
+            </tr>
+            <tr>
+                <td>Fabiano Mota</td>
+                <td>Star Wars</td>
+                <td>Taxi Driver</td>
+                <td>Toy Story</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row" colspan="4">Total de Filmes</th>
+                <td>18</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
