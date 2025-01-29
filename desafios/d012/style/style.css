@@ -15,7 +15,7 @@
     --font-escrita: 'Australian'
 }
 
-html, body {
+html {
     background-color: darkgray;
     min-height: 100vh;
 }
