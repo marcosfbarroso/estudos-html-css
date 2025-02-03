@@ -9,12 +9,12 @@
     <h1>Formulário</h1>
     <form action="cadastro.php" autocomplete="off" method="post">
         <p>
-            <label for="iusu"></label>
-            <input type="text" name="usu" id="iusu">
+            <label for="iuser">Usuário: </label>
+            <input type="text" name="user" id="iuser" required minlength="5" maxlength="20" size="20" placeholder="Usuário">
         </p>
         <p>
-            <label for="isenha"></label>
-            <input type="password" name="senha" id="isenha">
+            <label for="isenha">Senha: </label>
+            <input type="password" name="pswd" id="ipswd" minlength="8" maxlength="20" placeholder="Senha">
         </p>
         <p>
             <input type="submit" value="Enviar">
