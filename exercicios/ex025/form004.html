@@ -7,12 +7,42 @@
 </head>
 <body>
     <h1>Formulário com Checkbox e Radio Button</h1>
-    <form action="cadastro.php" method="get" autocomplete="off"></form>
+    <form action="cadastro.php" method="get" autocomplete="off">
         <fieldset>
-            <legend>Esportes favoritos</legend>
+            <legend>Sexo</legend>
+    
+            <label for="isexmas">Masculino</label>
+            <input type="radio" name="sexo" id="isexmas" value="M"><br>
+            
+            <label for="isexmas">Feminino</label>
+            <input type="radio" name="sexo" id="isexfem" value="F"><br>
+    
+        </fieldset>    
+        <fieldset>
+                <legend>Esportes favoritos</legend>
+    
+                <label for="itenis">Tenis</label>
+                <input type="checkbox" name="tenis" id="itenis">
+                <br>
+    
+                <label for="ifutebol">Futebol</label>
+                <input type="checkbox" name="futebol" id="ifutebol">
+                <br>
+                
+                <label for="ivolei">Volei</label>
+                <input type="checkbox" name="volei" id="ivolei">
+                <br>
+    
+                <label for="ibasquete">Basquete</label>
+                <input type="checkbox" name="basquete" id="ibasquete">
+                <br>
+            </fieldset>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
 
-            <label for="cadastro.php"></label>
-            <input type="checkbox" name="basquete" id="ibasquete">
-        </fieldset>
+    </form>
+    
 </body>
 </html>
