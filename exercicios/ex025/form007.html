@@ -6,15 +6,64 @@
     <title>Formulário</title>
 </head>
 <body>
-    <form action="cadastro.php" autocomplete="off" method="get">
-        
+    <form action="cadastro.php" autocomplete="off" method="post" oninput="output1.value = Number(in3.value); output2.value = Number(in4.value)">
+        <fieldset>
+            <p>
+                <label for="in1"> Número 1: </label>
+                <input type="number" name="n1" id="in1" required min="0" max="50" oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+            </p>
+            <p>
+                <label for="in2"> Número 2: </label>
+                <input type="number" name="n2" id="in2" required min="0" max="50" oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+            </p>
+            <p>
+                <label for="isoma">Soma: </label>
+                <output name="soma" id="isoma"></output>
+            </p>
+        </fieldset>
 
-        
+        <fieldset>
+            <p>
+                <label for="in3"> Número 1: </label>
+                <input type="range" name="n3" id="in3" required min="0" max="10" value="0" oninput="imedia.innerHTML = Number(in3.value)/2 + Number(in4.value)/2">
+                <output name="output1" for="in3"></output>
+            </p>
+            <p>
+                <label for="in4"> Número 2: </label>
+                <input type="range" name="n4" id="in4" required min="0" max="10" value="0" oninput="imedia.innerHTML = Number(in3.value)/2 + Number(in4.value)/2">
+                <output name="output2" for="in4"></output>
+            </p>
+            <p>
+                <label for="imedia">Media: </label>
+                <output name="media" id="imedia"></output>
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <p>
+                
+                <label for="iano">Ano: </label>
+                <input type="number" name="ano" id="iano" min="1900" max="2025" oninput="calcIdade()">
+                
+            </p>
+
+            <p>
+                <label for="iidade">Sua idade é:</label>
+                <output id="iidade"></output>
+            </p>
+        </fieldset>
+
         <p>
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
         </p>    
         
-    </form>    
+    </form>
+    <script>
+        function calcIdade() {
+            let atual = new Date().getFullYear()
+            iidade.innerHTML = Number(atual) - Number(iano.value)
+        }
+    </script>
 </body>
 </html>
