@@ -1,0 +1,63 @@
+@charset "UTF-8";
+
+/* Versão para media queries */
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    body {
+        background: black url(../../imagens/back-tablet.jpg) center center no-repeat;
+        background-size: cover;
+    }
+    
+    img#phone {display:none;}
+    img#tablet {display:block;}
+    img#print {display:none;}
+    img#pc {display:none;}
+    img#tv {display:none;}  
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1919px) {
+    body {
+        background: black url(../../imagens/back-pc.jpg) center center no-repeat;
+        background-size: cover;
+    }
+    
+    img#phone {display:none;}
+    img#tablet {display:none;}
+    img#print {display:none;}
+    img#pc {display:block;}
+    img#tv {display:none;}
+}
+
+@media screen and (min-width: 1920px) {
+    body {
+        background: black url(../../imagens/back-tv.jpg) center center no-repeat;
+        background-size: cover;
+    }
+    
+    img#phone {display:none;}
+    img#tablet {display:none;}
+    img#print {display:none;}
+    img#pc {display:none;}
+    img#tv {display:block;}
+}
+
+@media print {
+    title {
+        display:none;
+    }
+
+    main {
+        font-size: 1em;
+        border: 2px solid black;
+        width: 95vw;
+        height: 97vh;
+        
+    }
+
+    img#phone {display:none;}
+    img#tablet {display:none;}
+    img#print {display:block;}
+    img#pc {display:none;}
+    img#tv {display:none;}
+}
+
