@@ -43,7 +43,7 @@ section#login {
     box-shadow: black 1px 1px 10px;
 
     transition: width .3s, height .3s;
-
+    animation: ease;
 }
 
 section#login > div#image {
@@ -59,3 +59,57 @@ section#login > div#form {
     display: block;
     padding: 10px;
 }
+
+div {
+    margin: auto;
+}
+
+div.field > span {
+    
+    transform: translate(0px, 8px);
+}
+
+div.field > label {
+    display: none;
+}
+
+div.field > input {
+    width: 80%;
+    height: 2em;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+a.button {
+    display: block;
+    background: var(--cor-secundaria);
+    width: 90%;
+    height: 35px;
+    border-radius: 5px;
+    border: black solid 1px;
+
+    color: white;
+    font-size: 1em;
+    text-align: center;
+    margin: auto;
+    text-decoration: none;
+}
+
+a.button:hover {background: var(--cor-padrao);}
+
+form > input[type=submit] {
+    display: block;
+    background: var(--cor-secundaria);
+    width: 90%;
+    height: 35px;
+    border-radius: 5px;
+    border: black solid 1px;
+
+    color: white;
+    font-size: 1em;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 5px;
+}
+
+form > input[type=submit]:hover {background: var(--cor-padrao);}
